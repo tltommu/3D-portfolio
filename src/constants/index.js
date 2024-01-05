@@ -1,4 +1,4 @@
-import { Kaggle, starbucks, tesla } from "../assets/images";
+import { kaggle, starbucks, tesla } from "../assets/images";
 import {
     car,
     contact,
@@ -113,7 +113,7 @@ export const experiences = [
     {
         title: "Competition: ICR-Identifying Age-Related Condition (Rank 2004/6430).",
         company_name: "Kaggle",
-        icon: Kaggle,
+        icon: kaggle,
         iconBg: "#accbe1",
         date: "May 2023 - Aug 2023",
         points: [
@@ -126,7 +126,7 @@ export const experiences = [
     {
         title: "Competition: Stanford Ribonanza RNA Folding (Rank 354/755)",
         company_name: "Kaggle",
-        icon: Kaggle,
+        icon: kaggle,
         iconBg: "#fbc3bc",
         date: "Sep 2023 - Dec 2023",
         points: [
