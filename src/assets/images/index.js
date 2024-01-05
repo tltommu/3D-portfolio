@@ -1,4 +1,4 @@
-import hero from './hero.jpg'
+
 import meta from './meta.png'
 import shopify from './shopify.png'
 import starbucks from './starbucks.png'
@@ -10,7 +10,7 @@ import python from './python.png'
 import pytorch from './pytorch.png'
 
 export {
-    hero,
+    
     meta,
     shopify,
     starbucks,
