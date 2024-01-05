@@ -5,6 +5,9 @@ import starbucks from './starbucks.png'
 import tesla from './tesla.png'
 import logo from './logo.svg'
 import kaggle from './kaggle.png'
+import pandas from './pandas'
+import python from './python'
+import pytorch from './pytorch'
 
 export {
     hero,
@@ -13,5 +16,8 @@ export {
     starbucks,
     tesla,
     logo,
-    kaggle
+    kaggle,
+    pandas,
+    python,
+    pytorch
 }

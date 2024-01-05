@@ -1,9 +1,9 @@
-import { kaggle, starbucks, tesla } from "../assets/images";
+import { kaggle, python, pandas, pytorch } from "../assets/images";
 import {
-    car,
+    pandas,
     contact,
     css,
-    estate,
+    python,
     express,
     git,
     github,
@@ -15,7 +15,7 @@ import {
     mui,
     nextjs,
     nodejs,
-    pricewise,
+    pytorch,
     react,
     redux,
     sass,
@@ -147,56 +147,35 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/tltommu',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/tommy-lam-a9579524a/',
     }
 ];
 
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: kaggle,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'Competition: Stanford Ribonanza RNA Folding (Rank 354/755)',
+        description: 'Developed Sinusoidal positional embedding module to incorporate positional information into RNA module with pytorch to predict RNA structure.',
+        link: 'https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding/leaderboard',
     },
     {
-        iconUrl: threads,
+        iconUrl: kaggle,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'Competition: ICR-Identifying Age-Related Condition (Rank 2004/6430).',
+        description: 'Developed a RandomForestRegression Model with sklearn module to predict age-related condition.',
+        link: 'https://www.kaggle.com/competitions/icr-identify-age-related-conditions/leaderboard',
     },
     {
-        iconUrl: car,
+        iconUrl: html,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'Simple Crud App',
+        description: 'Designed and built a simple web-app allow user to create, edit, update and delete post',
+        link: 'https://yellow-sky-094200410.4.azurestaticapps.net/',
     },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
 ];
