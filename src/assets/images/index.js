@@ -5,9 +5,9 @@ import starbucks from './starbucks.png'
 import tesla from './tesla.png'
 import logo from './logo.svg'
 import kaggle from './kaggle.png'
-import pandas from './pandas'
-import python from './python'
-import pytorch from './pytorch'
+import pandas from './pandas.png'
+import python from './python.png'
+import pytorch from './pytorch.png'
 
 export {
     hero,
