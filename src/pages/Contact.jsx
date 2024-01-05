@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser'
 import { Canvas } from '@react-three/fiber'
 import Fox from '../models/fox'
 import Loader from '../components/Loader'
-import useAlert from '../hooks/usealert'
+import useAlert from '../hooks/useAlert'
 import Alert from '../components/Alert'
 
 const Contact = () => {
