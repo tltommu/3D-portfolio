@@ -1,9 +1,7 @@
 import { kaggle, python, pandas, pytorch } from "../assets/images";
 import {
-    pandas,
     contact,
     css,
-    python,
     express,
     git,
     github,
@@ -15,7 +13,6 @@ import {
     mui,
     nextjs,
     nodejs,
-    pytorch,
     react,
     redux,
     sass,
@@ -106,6 +103,21 @@ export const skills = [
         imageUrl: typescript,
         name: "TypeScript",
         type: "Frontend",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Backend",
+    },
+    {
+        imageUrl: pytorch,
+        name: "Pytorch",
+        type: "Machine-learning",
+    },
+    {
+        imageUrl: pandas,
+        name: "Pandas",
+        type: "Machine-learning",
     }
 ];
 
