@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { Kaggle, starbucks, tesla } from "../assets/images";
 import {
     car,
     contact,
@@ -111,55 +111,29 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Competition: ICR-Identifying Age-Related Condition (Rank 2004/6430).",
+        company_name: "Kaggle",
+        icon: Kaggle,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "May 2023 - Aug 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed a RandomForestRegression Model with sklearn module to predict age-related condition",
+            "Adjusted model parameters to hyperparameters to avoid over-fitting",
+            "Implemented KFOLD to evaluate the model on multiple set of data to detect issues related to underfitting or overfitting.",
+            "Handled imbalanced data by weight-sampling to achieve more accurate results",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Competition: Stanford Ribonanza RNA Folding (Rank 354/755)",
+        company_name: "Kaggle",
+        icon: Kaggle,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "Sep 2023 - Dec 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed Sinusoidal positional embedding module to incorporate positional information into RNA module with pytorch to predict RNA structure.",
+            "Utilized K-fold to cross validate RNA model to improve prediction result.",
+            "Tracked training process with a simple process bar created with python tqdm module.",
+            "Organized and diversified workload for a team of 3 to deliver the project within deadlines.",
         ],
     },
 ];
