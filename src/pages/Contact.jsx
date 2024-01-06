@@ -99,7 +99,7 @@ const Contact = () => {
               className='textarea'
               placeholder='Let me know how I can help you!'
               required
-              value={form.name}
+              value={form.message}
               onChange={handleChange}
               onFocus={handleFocus}
               onBlur={handleBlur}
