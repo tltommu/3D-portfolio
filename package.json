@@ -2,6 +2,7 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://tltommu.github.io/3D-portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
