@@ -16,6 +16,30 @@ const home = () => {
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] =useState(1);
   const[isPlayingMusic, setIsPlayingMusic] = useState(false);
+  const [buttononclick, setButtonOnclick] = useState(false);
+  const islandRef = useRef();
+  const moveIsland = () => {
+    switch (currentStage) {
+      case 1:
+        if(buttononclick ==true && currentStage==1)
+        normalizedRotation.y = 2.5;
+        break;
+      case 2:
+        if(buttononclick ==true && currentStage==2)
+        normalizedRotation.y = 1.15;;
+        break;
+      // Add cases for other stages
+      case 3:
+        if(buttononclick ==true && currentStage==3)
+        normalizedRotation.y = 5.5;;
+        break;
+      
+      case 4:
+        if(buttononclick ==true && currentStage==4)
+        normalizedRotation.y= 4.5;;
+        break;
+    }
+  };
 
   useEffect(()=>{
     if(isPlayingMusic){
@@ -61,7 +85,7 @@ const home = () => {
   return (
     <section className='w-full h-screen relative'>
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-        {currentStage&& <Homeinfo currentStage={currentStage}/>}
+        {currentStage&& <Homeinfo currentStage={currentStage} moveIsland={moveIsland}/>}
       </div>
       <Canvas 
       className={`w-full h-screen bg-transparent ${isRotating? 'cursor-grabbing' : 'cursor-grab'}`}
@@ -82,6 +106,7 @@ const home = () => {
           rotation={islandRotation}
           isRotating={isRotating}
           setIsRotating={setIsRotating}
+          moveIsland={moveIsland}
           setCurrentStage={setCurrentStage}/>
 
         <Plane

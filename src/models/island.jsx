@@ -13,6 +13,7 @@ import { a } from '@react-spring/three'
 
 import islandScene from '../assets/3d/island.glb'
 
+
 const Island = ( {isRotating, setIsRotating,setCurrentStage, ...props}) => {
   const islandRef =useRef();
 
@@ -76,6 +77,19 @@ const Island = ( {isRotating, setIsRotating,setCurrentStage, ...props}) => {
     }
   }
 
+  const moveIsland = (e) => {
+    if (e.button === 0 && currentStage === 1) {
+      normalizedRotation.y = 2.5;
+    } else if (e.button === 0 && currentStage === 2) {
+      normalizedRotation.y = 1.15;
+    } else if (e.button === 0 && currentStage === 3) {
+      normalizedRotation.y = 5.5;
+    } else if (e.button === 0 && currentStage === 4) {
+      normalizedRotation.y = 4.5;
+    }
+  };
+  
+
   useFrame(()=>{
     if(!isRotating){
         rotationSpeed.current *=dampingFactor;
@@ -87,7 +101,7 @@ const Island = ( {isRotating, setIsRotating,setCurrentStage, ...props}) => {
         islandRef.current.rotation.y +=rotationSpeed.current;
     }else{
         const rotation =islandRef.current.rotation.y
-
+        
         const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
 
@@ -112,22 +126,26 @@ const Island = ( {isRotating, setIsRotating,setCurrentStage, ...props}) => {
   })
 
   
+  
+  useEffect(() => {
+    const canvas = gl.domElement;
+    canvas.addEventListener('pointerdown', handlePointerDown);
+    canvas.addEventListener('pointerup', handlePointerUp);
+    canvas.addEventListener('pointermove', handlePointerMove);
+    canvas.addEventListener('mousedown', moveIsland); // Use 'mousedown' instead of 'move'
+    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('keyup', handlekeyUp);
 
-  useEffect(()=>{
-    const canvas =gl.domElement;
-    canvas.addEventListener('pointerdown',handlePointerDown);
-    canvas.addEventListener('pointerup',handlePointerUp);
-    canvas.addEventListener('pointermove',handlePointerMove);
-    document.addEventListener('keydown',handleKeyDown);
-    document.addEventListener('keyup',handlekeyUp);
-    return()=> {
-        canvas.removeEventListener('pointerdown',handlePointerDown);
-        canvas.removeEventListener('pointerup',handlePointerUp);
-        canvas.removeEventListener('pointermove',handlePointerMove);
-        document.removeEventListener('keydown',handleKeyDown);
-        document.removeEventListener('keyup',handlekeyUp);
-    }
-  },[gl,handlePointerDown,handlePointerUp,handlePointerMove])
+    return () => {
+      canvas.removeEventListener('pointerdown', handlePointerDown);
+      canvas.removeEventListener('pointerup', handlePointerUp);
+      canvas.removeEventListener('pointermove', handlePointerMove);
+      canvas.removeEventListener('mousedown', moveIsland);
+      document.removeEventListener('keydown', handleKeyDown);
+      document.removeEventListener('keyup', handlekeyUp);
+    };
+  }, [gl, handlePointerDown, handlePointerUp, handlePointerMove]);
+  
 
   return (
     <a.group ref ={ islandRef}{...props} >
