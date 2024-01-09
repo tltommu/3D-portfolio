@@ -18,7 +18,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium sm:text-xl text-center'>
-          Devoted to becoming a Software Engineer<br /> and dilligently follwing the self-learning path.
+          Devoted to becoming a Software Engineer<br /> and diligently following the self-learning path.
         </p>
 
         <Link to='/about' className='neo-brutalism-white neo-btn'>
@@ -33,7 +33,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium text-center sm:text-xl'>
-          Have diversive exposure in different field of Software Engineering. <br /> Such as game developing, web developing and machine learning model developing.
+          Have diverse exposure in different field of Software Engineering. <br /> Such as game developing, web developing and machine learning model developing.
         </p>
 
         <Link to='/projects' className='neo-brutalism-white neo-btn'>
